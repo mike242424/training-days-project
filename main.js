@@ -1,5 +1,3 @@
-// The scope of `random` is too loose
-
 const getRandEvent = () => {
   const random = Math.floor(Math.random() * 3);
   if (random === 0) {
@@ -11,7 +9,6 @@ const getRandEvent = () => {
   }
 };
 
-// The scope of `days` is too tight
 const getTrainingDays = (event) => {
   let days;
   if (event === "Marathon") {
@@ -25,7 +22,6 @@ const getTrainingDays = (event) => {
   return days;
 };
 
-// The scope of `name` is too tight
 const name = "Nala";
 const logEvent = (name, event) => {
   console.log(`${name}'s event is: ${event}`);
